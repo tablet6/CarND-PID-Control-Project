@@ -35,5 +35,5 @@ Adding Integral Control to the above PD Control yields good results for all of t
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/i8qi5n2-TFI" frameborder="0" gesture="media" allowfullscreen></iframe>
 
-## Reflection
+## Improvements
 Even though the car completes the track without major issues with throttle 0.4, it definetly needs a different way of tuning the parameters for faster speeds and making the car oscillate less. 
