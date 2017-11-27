@@ -7,15 +7,16 @@ Self-Driving Car Engineer Nanodegree Program
 
 1. Tried upto 40mph Throttle with manual tuning of parameters.
 2. Used init tau values of PID as Kp = 0.2, Ki = 0.005, Kd = 3.0.
-3. Used p_error = 0.07, i_error = 0.0, d_error = 0.0 init values.
+3. Used p\_error = 0.07, i\_error = 0.0, d\_error = 0.0 init values.
 4. Tuning params:
-	- Started with throttle=0.4
-	- Reduce the throttle to 0.1 when steering value is out of bounds [-1, 1].
-	- Skip doing the above 2 steps if this is the 1st time we see out of bounds value. Did in a very crude way. Definetly needs improvement there.
-	- Also, when throttle is reduced to 0.1, clamp the steering value if it is out-of-bound.
+	- Started with throttle as 0.4.
+	- Reduced the throttle to 0.1 when steering value is out of bounds [-1, 1].
+	- Skip doing the above step if this is the 1st time we see out of bounds value. I did in a very crude way. Definetly needs improvement there.
+	- Also, when throttle is reduced to 0.1, clamp the steering value if it is out-of-bounds.
 	- Works "ok" upto 0.4 throttle. Beyond that, it doesn't.
-	- To improve, I tried implementing Twiddle, but failed to match the class algorithm to the simulator.
+	- To improve the car movement around the track, I tried implementing Twiddle, but failed to match the lecture algorithm to the simulator.
 	- Also, tried playing with tuning tau parameters with other methods, but failed to acheive consistent track completions.
+	- So went back to throttle as 0.4 and reducing it to 0.1 when necessary, before bumping back to 0.4 again. This acheived reasonable car movement around the track.
 
 	
 [//]: # (Image References)
@@ -34,7 +35,7 @@ Only doing Proportional Control yields expected results, where the car oscillate
 
 ### PD Control
 
-Adding Differential Control yields good results for most of the track. The Cross track error (CTE) converges nicely. But it fails on hard turn. The effect is demonstrated below.
+Adding Differential Control to P, yields good results for most of the track. The Cross track error (CTE) converges nicely. But it fails on hard turn. The effect is demonstrated below.
 
 [![alt text][image2]](https://youtu.be/sXCLhvGfGvY "Proportional-Differential Control")
 
