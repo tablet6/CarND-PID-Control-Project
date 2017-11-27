@@ -17,19 +17,19 @@ Self-Driving Car Engineer Nanodegree Program
 	- To improve, I tried implementing Twiddle, but failed to match the class algorithm to the simulator.
 	- Also, tried playing with tuning tau parameters with other methods, but failed to acheive consistent track completions.
 
-###P Control
+### P Control
 
 Only doing Proportional Control yields expected results, where the car oscillates. The effect is demonstrated below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/Vkt2f7XrGVo" frameborder="0" gesture="media" allowfullscreen></iframe>
 
-###PD Control
+### PD Control
 
 Adding Differenetial Control yields good results for most of the track. The Corss track error (CTE) converges nicely. But it fails on hard turn. The effect is demonstrated below.
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/sXCLhvGfGvY" frameborder="0" gesture="media" allowfullscreen></iframe>
 
-###PID Control
+### PID Control
 
 Adding Integral Control to the above PD Control yields good results for all of the track. The Corss track error (CTE) converges nicely. The effect is demonstrated below.
 
