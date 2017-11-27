@@ -20,8 +20,8 @@ Self-Driving Car Engineer Nanodegree Program
 	
 [//]: # (Image References)
 
-[image1]: ./images/p.png "Proportional Comtrol"
-[image2]: ./examples/image-bgr-left.png "Left"
+[image1]: ./Images/p.png "Proportional Control"
+
 
 ### P Control
 
