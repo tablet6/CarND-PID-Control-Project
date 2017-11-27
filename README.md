@@ -29,19 +29,19 @@ Only doing Proportional Control yields expected results, where the car oscillate
 
 [![alt text][image1]](https://youtu.be/Vkt2f7XrGVo "Proportional Control")
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Vkt2f7XrGVo" frameborder="0" gesture="media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Vkt2f7XrGVo" frameborder="0" gesture="media"></iframe>
 
 ### PD Control
 
 Adding Differential Control yields good results for most of the track. The Corss track error (CTE) converges nicely. But it fails on hard turn. The effect is demonstrated below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/sXCLhvGfGvY" frameborder="0" gesture="media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/sXCLhvGfGvY" frameborder="0" gesture="media"></iframe>
 
 ### PID Control
 
 Adding Integral Control to the above PD Control yields good results for all of the track. The Corss track error (CTE) converges nicely. The effect is demonstrated below.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/i8qi5n2-TFI" frameborder="0" gesture="media" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/i8qi5n2-TFI" frameborder="0" gesture="media"></iframe>
 
 ## Improvements
 Even though the car completes the track without major issues with throttle 0.4, it definetly needs a different way of tuning the parameters for faster speeds and making the car oscillate less. 
